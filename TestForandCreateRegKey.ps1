@@ -1,4 +1,5 @@
 ﻿#Author John Tomchick, created 09/20/2022
+#Edited 09/27/2022
 #References: https://adamtheautomator.com/powershell-to-get-a-registry-value/#Getting_Registry_Keys_and_Values_with_Get-ChildItem, https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-itemproperty?view=powershell-7.2
 #Prompt user to enter registry path in question
 $path = Read-Host -Prompt "Please enter full path to the registry key being created" 
