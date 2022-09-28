@@ -8,8 +8,9 @@ Function Test-RegistryValue ($regkey, $name) {
         $false
     }
 }
-# Get reg item to delete 
+# Get reg item to delete, example format 'HKLM\Software\Microsoft\blah. If a value inside a key, that will need speicified.
 $path = Read-Host -Prompt "Please enter the full path to the registry key to delete"
+
 #Use function to test if key and value exist
 Test-RegistryValue $path
 #If exists, delete
