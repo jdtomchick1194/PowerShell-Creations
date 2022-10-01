@@ -15,3 +15,7 @@ $regKey = Test-Path -Path $path
 
 $regValue = Read-Host -Prompt "Please enter name of registry value being created"
 Set-ItemProperty -Path $regValue -ErrorAction Stop
+
+
+# Note: thinking about this wrong. Set-item property is going to create value inside \Software. Not create key to then create value inside \Software\Test
+# Look at pipeline from working inside Win VM then work from that angle. 
